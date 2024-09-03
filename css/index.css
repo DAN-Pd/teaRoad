@@ -1,0 +1,450 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+}
+
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #3A4058;
+}
+
+.features {
+	position: absolute;
+	width: 40%;
+	right: 0%;
+	padding: 0px;
+	z-index: 2;
+}
+
+.feature-border {
+	position: fixed;
+	color: #000000;
+	background-color: #F4EFEB;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	border-color: #A18383;
+	border-style: solid;
+	border-width: 0 2px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	z-index: 1;
+}
+
+.line-s {
+	position: fixed;
+	background-color: #A18383;
+	width: 2px;
+	height: 50px;
+}
+
+.line-h {
+	position: fixed;
+	background-color: #A18383;
+	width: 50px;
+	height: 2px;
+}
+
+.line-s:nth-child(1) {
+	right: 39%;
+	top: 20px;
+}
+
+.line-s:nth-child(2) {
+	right: calc(39% - 10px);
+	top: 10px;
+}
+
+.line-s:nth-child(3) {
+	right: calc(1% + 10px);
+	bottom: 10px;
+}
+
+.line-s:nth-child(4) {
+	right: 1%;
+	bottom: 20px;
+}
+
+.line-h:nth-child(5) {
+	right: calc(39% - 50px);
+	top: 20px;
+}
+
+.line-h:nth-child(6) {
+	right: calc(39% - 60px);
+	top: 10px;
+}
+
+.line-h:nth-child(7) {
+	right: calc(1% + 10px);
+	bottom: 10px;
+}
+
+.line-h:nth-child(8) {
+	right: 1%;
+	bottom: 20px;
+}
+
+.separator-l1 {
+	width: 80%;
+	height: 10px;
+	margin: 0 10% 10px 10%;
+	display: flex;
+	align-items: center;
+	opacity: 0.5;
+}
+
+.separator-l1>div:first-child {
+	width: calc(50% - 15px);
+	height: 2px;
+	background-color: #A18383;
+	border-radius: 5px;
+}
+
+.separator-l1>div:nth-child(2) {
+	width: 10px;
+	height: 10px;
+	margin: 0 10px;
+	background-color: #A18383;
+	border-radius: 5px;
+}
+
+.separator-l1>div:last-child {
+	width: calc(50% - 15px);
+	height: 2px;
+	background-color: #A18383;
+	border-radius: 5px;
+}
+
+.separator-l2 {
+	width: 80%;
+	height: 10px;
+	margin: 0 10% 5px 10%;
+	/* display: flex; */
+	text-align: center;
+	align-items: center;
+	opacity: 0.3;
+}
+
+.separator-l2>div {
+	width: 60%;
+	height: 1px;
+	margin: auto;
+	background-color: #A18383;
+	border-radius: 5px;
+}
+
+section {
+	padding: 0px 50px;
+	line-height: 24px;
+	opacity: 1;
+	font-size: 15px;
+}
+
+section:first-child {
+	margin-top: 50px;
+}
+
+section:last-child {
+	border-bottom: none;
+	margin-bottom: 50%;
+}
+
+/* 字体样式 */
+h1 {
+	font-family: 'Ma Shan Zheng', cursive;
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+
+h4 {
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+}
+
+h5 {
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+}
+
+h6 {
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+}
+
+p {
+	font-family: 'Ma Shan Zheng', cursive;
+	font-size: 16px;
+	text-indent: 2em;
+}
+
+
+.user-picture {
+	width: 100%;
+	align-items: center;
+}
+
+.user-picture img {
+	width: 100%;
+}
+
+.user-picture1 {
+	width: 100%;
+	align-items: center;
+
+}
+
+.user-picture1 img {
+	width: 100%;
+	align-items: center;
+
+}
+
+.user-picture2 {
+	width: 70%;
+	text-align: center;
+
+}
+
+.user-picture2 img {
+	width: 70%;
+	text-align: center
+}
+
+/* 按钮开关 */
+.menu {
+	background: #ffffff00;
+	z-index: 1;
+	top: 5300px;
+	right: 50px;
+	border-radius: 3px;
+	width: 120px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu a {
+	font-size: 13px;
+	color: #404040;
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding: 10px;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	text-align: center;
+}
+
+.menu a:last-child {
+	border: none;
+}
+
+.menu a:hover {
+	background-color: #f8f8f8;
+	color: #404040;
+}
+
+.menu a.active {
+	background-color: #3887be;
+	color: #ffffff;
+}
+
+.menu a.active:hover {
+	background: #3074a4;
+}
+
+
+
+/* 茶叶海运图例 */
+.map-overlay {
+	font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	position: fixed;
+	width: 25%;
+	bottom: 0;
+	right: 40%;
+	padding: 10px;
+	display:none;
+}
+
+.map-overlay .map-overlay-inner {
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.map-overlay h2 {
+	line-height: 24px;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.map-overlay input {
+	background-color: transparent;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	cursor: ew-resize;
+}
+
+.legend {
+	display: flex;
+	align-items: center;
+}
+
+
+
+.legend h3 {
+	margin: 10px 10px;
+}
+
+.legend div span {
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;
+	margin-left: 15px;
+	margin-right: 5px;
+	width: 10px;
+}
+
+
+.legend1 {
+	background-color: #fff;
+	border-radius: 3px;
+	bottom: 30px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	padding: 10px;
+	position: absolute;
+	right: 10px;
+	z-index: 1;
+}
+
+.legend1 h6 {
+	margin: 0 0 10px;
+}
+
+.legend1 div span {
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;
+	margin-right: 5px;
+	width: 10px;
+}
+
+/* Hide the input */
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+.check-trail {
+	display: flex;
+	align-items: center;
+	width: 9em;
+	height: 5em;
+	background: #2c3e50;
+	border-radius: 2.5em;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.check-handler {
+	display: flex;
+	margin-left: 0.5em;
+	justify-content: center;
+	align-items: center;
+	width: 4em;
+	height: 4em;
+	background: #34495e;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.check-handler:before {
+	content: "\00D7";
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+input[type="checkbox"]:checked+.check-trail {
+	background: #16a085;
+}
+
+input[type="checkbox"]:checked+.check-trail .check-handler {
+	margin-left: 50%;
+	background: #1abc9c;
+}
+
+input[type="checkbox"]:checked+.check-trail .check-handler::before {
+	content: "✔";
+}
+
+/* 地球转动 */
+.btn-spin {
+	font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background-color: #3386c0;
+	color: #fff;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	z-index: 10;
+	border: none;
+	width: 200px;
+	margin-left: -100px;
+	display: fixed;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+
+.btn-spin:hover {
+	background-color: #4ea0da;
+}
+
+#cultureLegend,#economicCorridorLegend {
+	width: fit-content;
+}
+
+.toggle {
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	margin: 5px 0px;
+	cursor: pointer;
+}
+
+.toggle-button {
+	font-size: 4px;
+}
+
+.toggle-text {
+	margin: 0px 10px;
+}
