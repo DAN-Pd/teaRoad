@@ -200,7 +200,6 @@ window.onload = function() {
 };
 
 function scrollCallback() {
-	// 你们这种检测到那一章节的方式能用但很坑，建议换方法
 	var chapterName = null;
 	for (var tmpChapterName in chapters) {
 		if (isElementOnScreen(tmpChapterName)) {
